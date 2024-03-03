@@ -1,6 +1,6 @@
 FROM maven:3.8.3-openjdk-17 AS build
 COPY . . 
-RUN mvn clean package -DskipTests
+RUN mvn clean package 
 
 # FROM node:20-alpine
 # WORKDIR /app
