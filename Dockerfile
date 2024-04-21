@@ -6,4 +6,4 @@ RUN mvn install
 FROM openjdk:17-jdk-slim-buster
 COPY --from=build /target/bootReact-0.0.1-SNAPSHOT.jar render.jar
 EXPOSE 8080
-ENTRYPOINT [ "java","-jar","render.jar" ]  
+ENTRYPOINT [ "java","-jar","bootReact.jar" ]  
